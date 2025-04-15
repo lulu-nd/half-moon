@@ -6,7 +6,7 @@
 
     --fundo-menu-lateral: #012840;
     --fundo-claro: #a6afb4;
-    --fundo-escuro: #262727;
+    --fundo-escuro: #091d44;
 
 
     --borda-clara: #0096f3;
@@ -235,3 +235,51 @@ cursor: pointer;
     letter-spacing: 2px;
     border-bottom: 3px solid #92b9ca;
 }
+
+/* estrutura do site = corpo */
+#main {
+    margin-left: 300px;
+}
+
+
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* seções e titulos */
+
+section {
+
+    padding: 60px;
+    overflow: hidden;
+    /*clara*/
+
+    background: #5b668e;
+}
+
+.section-bg {
+    /* escuro */
+    background: #012840;
+    color: var(--texto-claro);
+}
+
+/* classe H2 */
+
+.section-titlle{
+    
+    padding-bottom: 30px;
+}
+/* titulo H2 */
+.section-titlle{
+    color: var(--texto-escuro);
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+   position: relative;
+}
+
+.section-titlle h2::after{
+    
+}
+    
