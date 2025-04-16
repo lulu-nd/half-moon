@@ -236,6 +236,26 @@ cursor: pointer;
     border-bottom: 3px solid #92b9ca;
 }
 
+@media (min-width: 1024px) {
+    #hero {
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 1024px) {
+    #hero {
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero h2 {
+        font-size: 90px;
+        line-height: 1;
+        margin-bottom: 45px;
+    }
+}
+
 /* estrutura do site = corpo */
 #main {
     margin-left: 300px;
@@ -255,7 +275,7 @@ section {
     overflow: hidden;
     /*clara*/
 
-    background: #5b668e;
+    background: #898fa6;
 }
 
 .section-bg {
@@ -266,12 +286,12 @@ section {
 
 /* classe H2 */
 
-.section-titlle{
+.section-title{
     
     padding-bottom: 30px;
 }
 /* titulo H2 */
-.section-titlle{
+.section-title h2{
     color: var(--texto-escuro);
     font-weight: 600;
     margin-bottom: 20px;
@@ -279,7 +299,30 @@ section {
    position: relative;
 }
 
-.section-titlle h2::after{
-    
+.section-title h2::after{
+    content: "";
+    position: absolute;
+    background: #05476d;
+    width: 160px;
+    height: 3px;
+    display: block;
+    bottom: 0;
+    left: 0;
 }
-    
+
+.section-p{
+    margin-bottom: 0;
+}
+
+/* sobre */
+
+.sobre .content h3{
+    color: #013049;
+    font-weight: 700;
+    font-size: 26px;
+}
+
+  .sobre .content ul {
+    list-style: none;
+    padding: 0;
+}   
