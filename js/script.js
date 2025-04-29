@@ -65,8 +65,7 @@ if (typed) {
   })
 }
 
+new PureCounter();
 
 })()
-
-
 
