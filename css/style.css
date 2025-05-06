@@ -21,7 +21,7 @@
 
 
 
-    --texto-escuro: #161616;
+    --texto-escuro: #00558a;
     --texto-claro: #ededed;
     --texto-branco: #d2eeff;
     --texto-hover: #218591;
@@ -446,7 +446,7 @@ section {
 .conquistas .count-box p{
     padding: 15px 0 0 0;
     margin: 0 0 0 60px;
-    color: #17454a;
+    color: #17354a;
 }
 
 .conquistas .count-box strong{
@@ -456,4 +456,40 @@ section {
 .conquistas .count-box i:hover, .conquistas .count-box span:hover{
     color: var(--fundo-claro);
     transition: ease-in-out .5s;
+}
+
+/* vendas // skills = habilidades */ 
+
+.skills .progress{
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+}
+
+.skills .progress .skill{
+    padding: 0;
+    margin: 0 0 5px 0;
+    text-transform: uppercase;
+    display: block;
+    color: #265ab2;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.skills .progress .skill .val{
+    font-style: normal;
+    float: right;
+}
+
+.skills .progress-bar-bg{
+    background: #00409f;
+    height: 10px;
+}
+
+.skills .progress-bar{
+    height: 10px;
+    background: #2d547d;
+    transition: 5s;
+    width: 1px;
 }

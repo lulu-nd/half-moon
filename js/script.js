@@ -67,5 +67,23 @@ if (typed) {
 
 new PureCounter();
 
+/* função waypoints */
+/* js para skills = habilidades ou vendas */
+
+let skilsContent = select('.skills-content')
+if (skilsContent) { //verificar o elemento existente
+  new Waypoint({ //criar uma instancia
+    element: skilsContent,
+    offset: '80%', //janela de visualização
+    handler: function(direction) {
+      let progress = select('.progress .progress-bar', true);
+
+      progress.forEach((el) => {
+        el.style.width = el.getAttribute('aria-valuenow') + '%'
+      });
+
+    }
+  })
+}
 })()
 
