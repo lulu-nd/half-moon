@@ -85,5 +85,18 @@ if (skilsContent) { //verificar o elemento existente
     }
   })
 }
+
+window.addEventListener('load', () => {
+
+   let portfolioContainer = select(".portfolio-container")
+   if (portfolioContainer) {
+    let portfolioIsotope = new Isotope(portfolioContainer, {
+      itemsSelector: 'portfolio-item'
+    });
+
+    let portfolioFilters = select('#portfolio-filters li', true);
+
+   }
+});
 })()
 
